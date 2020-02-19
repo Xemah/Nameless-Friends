@@ -63,9 +63,9 @@ class FriendsModule extends Module {
 			
 			$smarty->assign('FRIENDS', $friendsLanguage->get('friends', 'friends'));
 
-			include('includes/functions.php');
-			include('includes/post.php');
-			include('includes/template.php');
+			require_once('includes/functions.php');
+			require_once('includes/post.php');
+			require_once('includes/template.php');
 
 		}
 	}
