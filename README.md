@@ -55,5 +55,5 @@
 - The loop can have these subscripts: `$item.id`, `$item.avatar`, `$item.username`, `$item.nickname` and `$item.profile`.
 
 ### [CONTACT]
-- Discord: https://xemah.com/discord
+- Discord: https://xemah.com/support
 - Email: contact@xemah.com
