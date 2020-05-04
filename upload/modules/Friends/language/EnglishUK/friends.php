@@ -26,5 +26,5 @@ $language = array(
 	'friend_removed' => 'Successfully removed {x} from your friend list.',
 	'friend_request_sent' => 'Successfully sent a friend request to {x}.',
 	'friend_request_accepted' => 'Successfully accepted the friend request from {x}.',
-	'friend_request_canceled' => 'Successfully canceled the friend request to {x}.',
+	'friend_request_canceled' => 'Successfully cancelled the friend request to {x}.',
 );
