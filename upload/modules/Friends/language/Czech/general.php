@@ -10,7 +10,7 @@
 
 $language_version = '2.0.0-pr7';
 
-$language = array(
+$language = [
     
     // General Terms
 	'friends' => 'Přátelé',
@@ -29,4 +29,5 @@ $language = array(
 	'friend_request_sent' => 'Žádost o přátelství byla úspěšně odeslána uživateli {x}.',
 	'friend_request_accepted' => 'Žádost o přátelství od {x} byla úspěšně přijata.',
 	'friend_request_canceled' => 'Žádost o přátelství od {x} byla úspěšně zrušena.',
-);
+	
+];

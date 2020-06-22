@@ -8,7 +8,7 @@
 
 $language_version = '2.0.0-pr7';
 
-$language = array(
+$language = [
     
     // General Terms
 	'friends' => 'Friends',
@@ -27,4 +27,5 @@ $language = array(
 	'friend_request_sent' => 'Successfully sent the friend request to {x}.',
 	'friend_request_accepted' => 'Successfully accepted the friend request from {x}.',
 	'friend_request_canceled' => 'Successfully canceled the friend request to {x}.',
-);
+	
+];

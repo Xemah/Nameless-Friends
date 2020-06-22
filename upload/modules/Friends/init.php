@@ -9,4 +9,4 @@
 $friendsLanguage = new Language(__DIR__ . '/language', LANGUAGE);
 
 require_once(__DIR__ . '/module.php');
-$module = new FriendsModule($friendsLanguage, $pages, $user, $queries, $navigation, $cache, $smarty);
+$module = new FriendsModule($language, $friendsLanguage, $user, $pages, $navigation, $queries, $smarty, $cache);
