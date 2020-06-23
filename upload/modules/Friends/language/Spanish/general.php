@@ -13,7 +13,7 @@ $language = [
     // General Terms
 	'friends' => 'Amigos',
 	'no_friends' => 'Sin amigos.',
-	'add_friend' => 'Agregar ammigo',
+	'add_friend' => 'Agregar amigo',
 	'remove_friend' => 'Eliminar amigo',
 	'accept_friend_request' => 'Aceptar solicitud de amistad',
 	'cancel_friend_request' => 'Cancelar solicitud de amistad',
