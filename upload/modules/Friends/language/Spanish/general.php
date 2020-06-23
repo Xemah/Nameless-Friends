@@ -20,12 +20,12 @@ $language = [
 	
     // Alert Terms
 	'received_friend_request' => '{x} te ha enviado una solicitud de amistad.',
-	'accepted_friend_request' => '{x} ha aceptado tu solicitud de amistad.',
+	'accepted_friend_request' => '{x} Ahora es tu amigo.',
 	
     // Flash Terms
-	'friend_removed' => 'Se elimino a {x} de tu lista de amigos correctamente.',
-	'friend_request_sent' => 'Se envió con éxito una solicitud de amistad a {x}.',
-	'friend_request_accepted' => 'Aceptó con éxito la solicitud de amistad de {x}.',
-	'friend_request_canceled' => 'Se canceló con éxito la solicitud de amistad para {x}.',
+	'friend_removed' => 'Has eliminado a {x} de tu lista de amigos.',
+	'friend_request_sent' => 'Has enviado una solicitud de amistad a {x}.',
+	'friend_request_accepted' => '{x} y tu ahora son amigos.',
+	'friend_request_canceled' => 'Has cancelado la solicitud de amistad a {x}.',
 	
 ];
