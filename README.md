@@ -7,8 +7,7 @@
 - Thats it!
 
 ### [NOTE]
-- This module only contains the support for **DefaultRevamp** Template.
-- If you have made any changes to `/custom/templates/DefaultRevamp/profile.tpl` file, make sure to back it up. Installing this module will overwrite this file.
+- This module only contains the support for **Default** and **DefaultRevamp** Template.
 
 ### [CONTACT]
 - Discord: https://xemah.com/support
