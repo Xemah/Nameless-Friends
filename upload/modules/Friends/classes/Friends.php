@@ -179,7 +179,7 @@ class Friends {
 				}
 				break;
 				
-			case 'cancelRequest':
+			case 'cancel_request':
 				if ($this->cancelRequest($this->_user->data()->id, $this->_profile_user->id)) {
 					$this->_smarty->assign('SUCCESS', str_replace('{x}', $this->_profile_user->username, $this->_friends_language->get('general', 'friend_request_canceled')));
 				}
