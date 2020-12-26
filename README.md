@@ -7,7 +7,7 @@
 - Thats it!
 
 ### [NOTE]
-- This module only contains the support for **Default** and **DefaultRevamp** Template.
+- This module only contains the support for **DefaultRevamp** Template.
 
 ### [CONTACT]
 - Discord: https://xemah.com/support
