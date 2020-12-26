@@ -6,34 +6,37 @@
  *
 **/
 
-$profile_user = explode('/', trim($_GET['route'], '/'));
-$profile_user = $profile_user[1];
-$profile_user = $queries->getWhere('users', ['username', '=', $profile_user]);
-$profile_user = $profile_user[0];
+$profileUser = explode('/', trim($_GET['route'], '/'));
+$profileUser = $profileUser[1];
+$profileUser = $queries->getWhere('users', ['username', '=', $profileUser]);
+$profileUser = $profileUser[0];
 
 require(__DIR__ . '/classes/Friends.php');
-$friends = new Friends($user, $profile_user, $language, $friends_language, $smarty);
+$friends = new Friends($user, $profileUser, $language, $friendsLanguage, $smarty);
 $friends->processPost();
 
-$friends_list = [];
-$friends_query = $friends->query($profile_user->id);
-if (!empty($friends_query)) {
-	foreach ($friends_query as $friend) {
-		$friend_id = (($friend->user_id == $profile_user->id) ? $friend->friend_id : $friend->user_id);
-		$friends_list[] = [
-			'id' => $friend_id,
-			'avatar' => $user->getAvatar($friend_id),
-			'username' => $user->IdToName($friend_id),
-			'nickname' => $user->IdToNickname($friend_id),
-			'style' => $user->getGroupClass($friend_id),
-			'profile' => URL::build('/profile/' . $user->IdToName($friend_id)),
+$friendsList = [];
+$friendsQuery = $friends->query($profileUser->id);
+if (!empty($friendsQuery)) {
+	foreach ($friendsQuery as $friend) {
+		$friendID = (($friend->user_id == $profileUser->id) ? $friend->friend_id : $friend->user_id);
+		$friendUser = new User($friendID);
+		$friendsList[] = [
+			'id' => $friendUser->data()->id,
+			'uuid' => $friendUser->data()->uuid,
+			'avatar' => $friendUser->getAvatar(),
+			'profile' => $friendUser->getProfileURL(),
+			'username' => $friendUser->getDisplayname(true),
+			'nickname' => $friendUser->getDisplayname(),
+			'style' => $friendUser->getGroupClass(),
+			'title' => Output::getClean($friendUser->data()->user_title),
 		];
 	}
 }
 
 $smarty->assign('FRIENDS', [
-	'title' => $friends_language->get('general', 'title'),
+	'title' => $friendsLanguage->get('general', 'title'),
 	'button' => $friends->generateButton(),
-	'list' => $friends_list,
-	'no_friends' => $friends_language->get('general', 'no_friends'),
+	'list' => $friendsList,
+	'no_friends' => $friendsLanguage->get('general', 'no_friends'),
 ]);

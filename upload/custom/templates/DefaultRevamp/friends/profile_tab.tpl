@@ -16,7 +16,7 @@
 		{/if}
 	{/if}
 
-	<h3 class="ui header">
+	<h3 class="ui header" style="display: flex; align-items: center; justify-content: space-between;">
 		{$FRIENDS.title}
 		{if isset($FRIENDS.button)}
 			<form action="" method="post" id="form-friend" style="float: right;">

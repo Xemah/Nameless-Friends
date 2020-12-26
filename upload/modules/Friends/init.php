@@ -6,14 +6,14 @@
  *
 **/
 
-$friends_language = new Language(__DIR__ . '/language', LANGUAGE);
+$friendsLanguage = new Language(__DIR__ . '/language', LANGUAGE);
 
 if (!isset($profile_tabs)) {
 	$profile_tabs = [];
 }
 
 $profile_tabs['friends'] = [
-	'title' => $friends_language->get('general', 'title'),
+	'title' => $friendsLanguage->get('general', 'title'),
 	'smarty_template' => 'friends/profile_tab.tpl',
 	'require' => __DIR__ . '/profile_tab.php',
 ];
