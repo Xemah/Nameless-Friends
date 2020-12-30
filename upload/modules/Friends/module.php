@@ -13,7 +13,7 @@ class FriendsModule extends Module
 		$module = [
 			'name' => 'Friends',
 			'author' => '<a href="https://xemah.com" target="_blank">Xemah</a>',
-			'version' => '2.1',
+			'version' => '2.2',
 			'namelessVersion' => '2.0.0-pr9'
 		];
 
