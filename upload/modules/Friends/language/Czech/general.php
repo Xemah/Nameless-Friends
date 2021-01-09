@@ -14,7 +14,7 @@ $language = [
     
 	'title' => 'Přátelé',
 	'friends' => 'Přátelé',
-	'no_friends' => 'Nemáte žádné přátele.',
+	'no_friends' => 'Žádní přátelé.',
 	'add_friend' => 'Přidat přítele',
 	'remove_friend' => 'Odebrat přítele',
 	'accept_friend_request' => 'Přijmout žádost o přátelství',
