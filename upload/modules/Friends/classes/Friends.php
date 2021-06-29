@@ -93,10 +93,10 @@ class Friends
 		}
 
 		Alert::create(
-			$user2, 'friend_request',
-			['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'accepted_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user1))]],
-			['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'accepted_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user1))]],
-			URL::build('/profile/' . $this->_user->idToName($user1))
+			$user1, 'friend_request',
+			['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'accepted_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user2))]],
+			['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'accepted_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user2))]],
+			URL::build('/profile/' . $this->_user->idToName($user2))
 		);
 
 		return true;
