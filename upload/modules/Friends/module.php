@@ -19,13 +19,18 @@ class FriendsModule extends Module {
 
     }
 
-    public function onInstall() {}
+    public function onInstall() {
+        try {
+            DB::getInstance()->createTable("friends", " `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL, `friend_id` int(11) NOT NULL, `notify` tinyint(1) NOT NULL DEFAULT '0', PRIMARY KEY (`id`)");
+        } catch(Exception $e) {
+            // ...
+        }
+    }
 
     public function onUninstall() {}
 
     public function onEnable() {
         try {
-            DB::getInstance()->createTable("friends", " `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL, `friend_id` int(11) NOT NULL, `notify` tinyint(1) NOT NULL DEFAULT '0', PRIMARY KEY (`id`)");
             DB::getInstance()->addColumn("friends", "accepted", "tinyint(1) NOT NULL DEFAULT 0");
         } catch(Exception $e) {
             // ...
