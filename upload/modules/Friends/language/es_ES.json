@@ -1,0 +1,15 @@
+{
+    "general\/accept_friend_request": "Aceptar solicitud de amistad",
+    "general\/accepted_friend_request": "{x} ha aceptado tu solicitud de amistad.",
+    "general\/add_friend": "Añadir amigo",
+    "general\/cancel_friend_request": "Cancelar solicitud de amistad",
+    "general\/friend_removed": "Has eliminado con éxito a {x} de tu lista de amigos.",
+    "general\/friend_request_accepted": "Se ha aceptado con éxito la solicitud de amistad de {x}.",
+    "general\/friend_request_canceled": "Se ha cancelado con éxito la solicitud de amistad a {x}.",
+    "general\/friend_request_sent": "Se ha enviado una solicitud de amistad a {x}.",
+    "general\/friends": "Amigos",
+    "general\/no_friends": "Sin amigos.",
+    "general\/received_friend_request": "{x} te ha enviado una solicitud de amistad.",
+    "general\/remove_friend": "Eliminar amigo",
+    "general\/title": "Amigos"
+}

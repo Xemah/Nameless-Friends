@@ -1,0 +1,15 @@
+{
+    "general\/accept_friend_request": "Aksepter venneforespørsel",
+    "general\/accepted_friend_request": "{x} har akseptert din venneforespørsel.",
+    "general\/add_friend": "Legg til venn",
+    "general\/cancel_friend_request": "Avslå venneforespørsel",
+    "general\/friend_removed": "{x} har blitt fjernet fra vennelisten din.",
+    "general\/friend_request_accepted": "Venneforespørselen fra {x} har blitt akseptert.",
+    "general\/friend_request_canceled": "Venneforespørselen til {x} har blitt avbrutt.",
+    "general\/friend_request_sent": "Venneforespørsel sendt til {x}.",
+    "general\/friends": "Venner",
+    "general\/no_friends": "Ingen venner.",
+    "general\/received_friend_request": "{x} har sendt deg en venneforespørsel.",
+    "general\/remove_friend": "Fjern venn",
+    "general\/title": "Venner"
+}
