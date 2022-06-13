@@ -1,15 +1,15 @@
 {
-    "general\/accept_friend_request": "Accepter la demande d'Ami(e)s",
-    "general\/accepted_friend_request": "{x} vous a Accepter en Ami(e)s.",
-    "general\/add_friend": "Ajouter un(e) Ami(e)s",
-    "general\/cancel_friend_request": "Refuser la demande d'Ami(e)s",
-    "general\/friend_removed": "Félicitation, vous avez retiré {x} de votre liste d'Ami(e)s.",
-    "general\/friend_request_accepted": "Félicitation, {x} a accepter votre demande d'Ami(e)s.",
-    "general\/friend_request_canceled": "Félicitation, vous avez annulé votre demande d'Ami(e)s a {x}...",
-    "general\/friend_request_sent": "Félicitation, vous avez envoyez une demande d'Ami(e)s a {x}.",
-    "general\/friends": "Ami(e)s",
-    "general\/no_friends": "La personne n'as pas d'ami(e)s précis(e) mais! Nous le sommes tous ♥.",
-    "general\/received_friend_request": "{x} vous a demander en Ami(e)s.",
-    "general\/remove_friend": "Retirer un(e) Ami(e)s",
-    "general\/title": "Ami(e)s"
+	"general\/accept_friend_request": "Accepter la demande d'Ami(e)s",
+	"general\/accepted_friend_request": "{{name}} vous a Accepter en Ami(e)s.",
+	"general\/add_friend": "Ajouter un(e) Ami(e)s",
+	"general\/cancel_friend_request": "Refuser la demande d'Ami(e)s",
+	"general\/friend_removed": "Félicitation, vous avez retiré {{name}} de votre liste d'Ami(e)s.",
+	"general\/friend_request_accepted": "Félicitation, {{name}} a accepter votre demande d'Ami(e)s.",
+	"general\/friend_request_canceled": "Félicitation, vous avez annulé votre demande d'Ami(e)s a {{name}}...",
+	"general\/friend_request_sent": "Félicitation, vous avez envoyez une demande d'Ami(e)s a {{name}}.",
+	"general\/friends": "Ami(e)s",
+	"general\/no_friends": "La personne n'as pas d'ami(e)s précis(e) mais! Nous le sommes tous ♥.",
+	"general\/received_friend_request": "{{name}} vous a demander en Ami(e)s.",
+	"general\/remove_friend": "Retirer un(e) Ami(e)s",
+	"general\/title": "Ami(e)s"
 }

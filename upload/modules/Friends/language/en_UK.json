@@ -1,15 +1,15 @@
 {
-    "general\/accept_friend_request": "Accept Friend Request",
-    "general\/accepted_friend_request": "{x} has accepted your friend request.",
-    "general\/add_friend": "Add Friend",
-    "general\/cancel_friend_request": "Cancel Friend Request",
-    "general\/friend_removed": "Successfully removed {x} from your friend list.",
-    "general\/friend_request_accepted": "Successfully accepted the friend request from {x}.",
-    "general\/friend_request_canceled": "Successfully cancelled the friend request to {x}.",
-    "general\/friend_request_sent": "Successfully sent a friend request to {x}.",
-    "general\/friends": "Friends",
-    "general\/no_friends": "No friends.",
-    "general\/received_friend_request": "{x} has sent you a friend request.",
-    "general\/remove_friend": "Remove Friend",
-    "general\/title": "Friends"
+	"general\/accept_friend_request": "Accept Friend Request",
+	"general\/accepted_friend_request": "{{name}} has accepted your friend request.",
+	"general\/add_friend": "Add Friend",
+	"general\/cancel_friend_request": "Cancel Friend Request",
+	"general\/friend_removed": "Successfully removed {{name}} from your friend list.",
+	"general\/friend_request_accepted": "Successfully accepted the friend request from {{name}}.",
+	"general\/friend_request_canceled": "Successfully cancelled the friend request to {{name}}.",
+	"general\/friend_request_sent": "Successfully sent a friend request to {{name}}.",
+	"general\/friends": "Friends",
+	"general\/no_friends": "No friends.",
+	"general\/received_friend_request": "{{name}} has sent you a friend request.",
+	"general\/remove_friend": "Remove Friend",
+	"general\/title": "Friends"
 }

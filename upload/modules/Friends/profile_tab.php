@@ -1,8 +1,8 @@
 <?php
 
 /**
- *    FRIENDS MODULE
- *    By Xemah | https://xemah.com
+ *	FRIENDS MODULE
+ *	By Xemah | https://xemah.com
  *
 **/
 
@@ -28,15 +28,15 @@ if (!empty($friendsQuery)) {
             'profile' => $friendUser->getProfileURL(),
             'username' => $friendUser->getDisplayname(true),
             'nickname' => $friendUser->getDisplayname(),
-            'style' => $friendUser->getGroupClass(),
+            'style' => $friendUser->getGroupStyle(),
             'title' => Output::getClean($friendUser->data()->user_title),
         ];
     }
 }
 
 $smarty->assign('FRIENDS', [
-    'title' => $friendsLanguage->get('general', 'title'),
+    'title' => FriendsModule::getLanguage('general', 'title'),
     'button' => $friends->generateButton(),
     'list' => $friendsList,
-    'no_friends' => $friendsLanguage->get('general', 'no_friends'),
+    'no_friends' => FriendsModule::getLanguage('general', 'no_friends'),
 ]);

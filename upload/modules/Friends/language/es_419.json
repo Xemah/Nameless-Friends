@@ -1,15 +1,15 @@
 {
-    "general\/accept_friend_request": "Aceptar solicitud de amistad",
-    "general\/accepted_friend_request": "{x} Ahora es tu amigo.",
-    "general\/add_friend": "Agregar ammigo",
-    "general\/cancel_friend_request": "Cancelar solicitud de amistad",
-    "general\/friend_removed": "Has eliminado a {x} de tu lista de amigos.",
-    "general\/friend_request_accepted": "{x} y tu ahora son amigos.",
-    "general\/friend_request_canceled": "Has cancelado la solicitud de amistad a {x}.",
-    "general\/friend_request_sent": "Has enviado una solicitud de amistad a {x}.",
-    "general\/friends": "Amigos",
-    "general\/no_friends": "Sin amigos.",
-    "general\/received_friend_request": "{x} te ha enviado una solicitud de amistad.",
-    "general\/remove_friend": "Eliminar amigo",
-    "general\/title": "Amigos"
+	"general\/accept_friend_request": "Aceptar solicitud de amistad",
+	"general\/accepted_friend_request": "{{name}} Ahora es tu amigo.",
+	"general\/add_friend": "Agregar ammigo",
+	"general\/cancel_friend_request": "Cancelar solicitud de amistad",
+	"general\/friend_removed": "Has eliminado a {{name}} de tu lista de amigos.",
+	"general\/friend_request_accepted": "{{name}} y tu ahora son amigos.",
+	"general\/friend_request_canceled": "Has cancelado la solicitud de amistad a {{name}}.",
+	"general\/friend_request_sent": "Has enviado una solicitud de amistad a {{name}}.",
+	"general\/friends": "Amigos",
+	"general\/no_friends": "Sin amigos.",
+	"general\/received_friend_request": "{{name}} te ha enviado una solicitud de amistad.",
+	"general\/remove_friend": "Eliminar amigo",
+	"general\/title": "Amigos"
 }

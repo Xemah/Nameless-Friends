@@ -1,15 +1,15 @@
 {
-    "general\/accept_friend_request": "Prijať žiadosť o priateľstvo",
-    "general\/accepted_friend_request": "{x} prijal\/a vašu žiadosť o priateľstvo.",
-    "general\/add_friend": "Pridať priateľa",
-    "general\/cancel_friend_request": "Zrušiť žiadosť o priateľstvo",
-    "general\/friend_removed": "Úspešne ste odstránili {x} zo zoznamu priateľov.",
-    "general\/friend_request_accepted": "Úspešne ste prijali žiadosť o priateľstvo od {x}.",
-    "general\/friend_request_canceled": "Úspešne zrušená žiadosť o priateľstvo od {x}.",
-    "general\/friend_request_sent": "Žiadosť o priateľstvo bola úspešne odoslaná užívateľovi {x}.",
-    "general\/friends": "Priatelia",
-    "general\/no_friends": "Žiadni priatelia.",
-    "general\/received_friend_request": "{x} vám poslal\/a žiadosť o priateľstvo.",
-    "general\/remove_friend": "Odstrániť priateľa",
-    "general\/title": "Priatelia"
+	"general\/accept_friend_request": "Prijať žiadosť o priateľstvo",
+	"general\/accepted_friend_request": "{{name}} prijal\/a vašu žiadosť o priateľstvo.",
+	"general\/add_friend": "Pridať priateľa",
+	"general\/cancel_friend_request": "Zrušiť žiadosť o priateľstvo",
+	"general\/friend_removed": "Úspešne ste odstránili {{name}} zo zoznamu priateľov.",
+	"general\/friend_request_accepted": "Úspešne ste prijali žiadosť o priateľstvo od {{name}}.",
+	"general\/friend_request_canceled": "Úspešne zrušená žiadosť o priateľstvo od {{name}}.",
+	"general\/friend_request_sent": "Žiadosť o priateľstvo bola úspešne odoslaná užívateľovi {{name}}.",
+	"general\/friends": "Priatelia",
+	"general\/no_friends": "Žiadni priatelia.",
+	"general\/received_friend_request": "{{name}} vám poslal\/a žiadosť o priateľstvo.",
+	"general\/remove_friend": "Odstrániť priateľa",
+	"general\/title": "Priatelia"
 }

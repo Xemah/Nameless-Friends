@@ -55,8 +55,20 @@ class Friends
 
         Alert::create(
             $user2, 'friend_request',
-            ['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'received_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user1))]],
-            ['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'received_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user1))]],
+            [
+				'path' => $this->_modulePath . '/language',
+				'file' => 'general',
+				'term' => 'received_friend_request',
+				'replace' => ['{{name}}'],
+				'replace_with' => [Output::getClean($this->_user->idToName($user1))]
+			],
+            [
+				'path' => $this->_modulePath . '/language',
+				'file' => 'general',
+				'term' => 'received_friend_request',
+				'replace' => ['{{name}}'],
+				'replace_with' => [Output::getClean($this->_user->idToName($user1))]
+			],
             URL::build('/profile/' . $this->_user->idToName($user1))
         );
 
@@ -94,8 +106,20 @@ class Friends
 
         Alert::create(
             $user1, 'friend_request',
-            ['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'accepted_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user2))]],
-            ['path' => $this->_modulePath . '/language', 'file' => 'general', 'term' => 'accepted_friend_request', 'replace' => ['{x}'], 'replace_with' => [Output::getClean($this->_user->idToName($user2))]],
+            [
+				'path' => $this->_modulePath . '/language',
+				'file' => 'general',
+				'term' => 'accepted_friend_request',
+				'replace' => ['{{name}}'],
+				'replace_with' => [Output::getClean($this->_user->idToName($user2))]
+			],
+            [
+				'path' => $this->_modulePath . '/language',
+				'file' => 'general',
+				'term' => 'accepted_friend_request',
+				'replace' => ['{{name}}'],
+				'replace_with' => [Output::getClean($this->_user->idToName($user2))]
+			],
             URL::build('/profile/' . $this->_user->idToName($user2))
         );
 
@@ -141,7 +165,7 @@ class Friends
         }
 
         if (!Token::check(Input::get('token'))) {
-            $this->_smarty->assign('ERROR', $this->_language->get('general', 'invalid_token'));
+            $this->_smarty->assign('ERROR', FriendsModule::getLanguage('general', 'invalid_token'));
             return false;
         }
 
@@ -153,25 +177,25 @@ class Friends
         
             case 'add_friend':
                 if ($this->addFriend($this->_user->data()->id, $this->_profileUser->id)) {
-                    $this->_smarty->assign('SUCCESS', str_replace('{x}', $this->_profileUser->username, $this->_friendsLanguage->get('general', 'friend_request_sent')));
+					$this->_smarty->assign('SUCCESS', FriendsModule::getLanguage('general', 'friend_request_sent', ['name' => $this->_profileUser->username]));
                 }
                 break;
 
             case 'remove_friend':
                 if ($this->removeFriend($this->_user->data()->id, $this->_profileUser->id)) {
-                    $this->_smarty->assign('SUCCESS', str_replace('{x}', $this->_profileUser->username, $this->_friendsLanguage->get('general', 'friend_removed')));
+					$this->_smarty->assign('SUCCESS', FriendsModule::getLanguage('general', 'friend_removed', ['name' => $this->_profileUser->username]));
                 }
                 break;
                 
             case 'accept_request':
                 if ($this->acceptRequest($this->_profileUser->id, $this->_user->data()->id)) {
-                    $this->_smarty->assign('SUCCESS', str_replace('{x}', $this->_profileUser->username, $this->_friendsLanguage->get('general', 'friend_request_accepted')));
+					$this->_smarty->assign('SUCCESS', FriendsModule::getLanguage('general', 'friend_request_accepted', ['name' => $this->_profileUser->username]));
                 }
                 break;
                 
             case 'cancel_request':
                 if ($this->cancelRequest($this->_user->data()->id, $this->_profileUser->id)) {
-                    $this->_smarty->assign('SUCCESS', str_replace('{x}', $this->_profileUser->username, $this->_friendsLanguage->get('general', 'friend_request_canceled')));
+					$this->_smarty->assign('SUCCESS', FriendsModule::getLanguage('general', 'friend_request_canceled', ['name' => $this->_profileUser->username]));
                 }
                 break;
 
@@ -187,28 +211,28 @@ class Friends
         if ($this->isFriends($this->_user->data()->id, $this->_profileUser->id)) {
 
             $friend_button = [
-                'text' => $this->_friendsLanguage->get('general', 'remove_friend'),
+                'text' => FriendsModule::getLanguage('general', 'remove_friend'),
                 'action' => 'remove_friend',
             ];
 
         } else if ($this->isRequested($this->_user->data()->id, $this->_profileUser->id)) {
 
             $friend_button = [
-                'text' => $this->_friendsLanguage->get('general', 'cancel_friend_request'),
+                'text' => FriendsModule::getLanguage('general', 'cancel_friend_request'),
                 'action' => 'cancel_request',
             ];
 
         } else if ($this->isRequested($this->_profileUser->id, $this->_user->data()->id)) {
 
             $friend_button = [
-                'text' => $this->_friendsLanguage->get('general', 'accept_friend_request'),
+                'text' => FriendsModule::getLanguage('general', 'accept_friend_request'),
                 'action' => 'accept_request',
             ];
 
         } else {
 
             $friend_button = [
-                'text' => $this->_friendsLanguage->get('general', 'add_friend'),
+                'text' => FriendsModule::getLanguage('general', 'add_friend'),
                 'action' => 'add_friend',
             ];
 

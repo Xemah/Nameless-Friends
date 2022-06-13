@@ -1,15 +1,15 @@
 {
-    "general\/accept_friend_request": "Přijmout žádost o přátelství",
-    "general\/accepted_friend_request": "{x} přijal vaši žádost o přátelství.",
-    "general\/add_friend": "Přidat přítele",
-    "general\/cancel_friend_request": "Zrušit žádost o přátelství",
-    "general\/friend_removed": "Uživatel {X} byl úspěšně odebrán ze seznamu přátel.",
-    "general\/friend_request_accepted": "Žádost o přátelství od {x} byla úspěšně přijata.",
-    "general\/friend_request_canceled": "Žádost o přátelství od {x} byla úspěšně zrušena.",
-    "general\/friend_request_sent": "Žádost o přátelství byla úspěšně odeslána uživateli {x}.",
-    "general\/friends": "Přátelé",
-    "general\/no_friends": "Žádní přátelé.",
-    "general\/received_friend_request": "{x} vám poslal žádost o přátelství.",
-    "general\/remove_friend": "Odebrat přítele",
-    "general\/title": "Přátelé"
+	"general\/accept_friend_request": "Přijmout žádost o přátelství",
+	"general\/accepted_friend_request": "{{name}} přijal vaši žádost o přátelství.",
+	"general\/add_friend": "Přidat přítele",
+	"general\/cancel_friend_request": "Zrušit žádost o přátelství",
+	"general\/friend_removed": "Uživatel {{name}} byl úspěšně odebrán ze seznamu přátel.",
+	"general\/friend_request_accepted": "Žádost o přátelství od {{name}} byla úspěšně přijata.",
+	"general\/friend_request_canceled": "Žádost o přátelství od {{name}} byla úspěšně zrušena.",
+	"general\/friend_request_sent": "Žádost o přátelství byla úspěšně odeslána uživateli {{name}}.",
+	"general\/friends": "Přátelé",
+	"general\/no_friends": "Žádní přátelé.",
+	"general\/received_friend_request": "{{name}} vám poslal žádost o přátelství.",
+	"general\/remove_friend": "Odebrat přítele",
+	"general\/title": "Přátelé"
 }
