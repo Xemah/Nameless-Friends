@@ -1,9 +1,9 @@
 <?php
 
 /**
-	*	FRIENDS MODULE
-*	By Xemah | https://xemah.com
-*
+ *	FRIENDS MODULE
+ *	By Xemah | https://xemah.com
+ *
 **/
 
 require_once(__DIR__ . '/module.php');
