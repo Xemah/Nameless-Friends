@@ -15,8 +15,8 @@ class FriendsModule extends Module
 		$module = [
 			'name' => 'Friends',
 			'author' => '<a href="https://xemah.com" target="_blank">Xemah</a>',
-			'version' => '2.5.2',
-			'namelessVersion' => '2.0.0-pr13'
+			'version' => '2.6',
+			'namelessVersion' => '2.0.1'
 		];
 
 		parent::__construct($this, $module['name'], $module['author'], $module['version'], $module['namelessVersion']);
