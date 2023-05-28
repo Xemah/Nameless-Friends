@@ -1,0 +1,15 @@
+{
+	"general\/accept_friend_request": "Accetta la richiesta di amicizia",
+	"general\/accepted_friend_request": "{{name}} ha accettato la tua richiesta di amicizia.",
+	"general\/add_friend": "Aggiungi amico",
+	"general\/cancel_friend_request": "Rifiuta la richiesta di amicizia",
+	"general\/friend_removed": "Successfully removed {{name}} from your friend list.",
+	"general\/friend_request_accepted": "Hai accettato la richiesta di amicizia di {{name}}.",
+	"general\/friend_request_canceled": "Hai rifiutato la richiesta di amicizia di {{name}}.",
+	"general\/friend_request_sent": "Hai mandato la richiesta di amicizia a {{name}}.",
+	"general\/friends": "Amici",
+	"general\/no_friends": "Nessun amico.",
+	"general\/received_friend_request": "{{name}} ti ha mandato una richiesta di amiciza.",
+	"general\/remove_friend": "Rimuovi amico",
+	"general\/title": "Amici"
+}
